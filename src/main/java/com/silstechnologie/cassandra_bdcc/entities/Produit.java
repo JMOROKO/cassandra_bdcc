@@ -9,12 +9,12 @@ import org.springframework.data.cassandra.core.mapping.Table;
 
 import java.util.UUID;
 
-@Table("utilisateur") //anotation cassandra
+@Table("produit") //anotation cassandra
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
-public class User {
+public class Produit {
     @PrimaryKey //anotation cassandra
     private UUID id;
     private String name;
-    private int age;
-    private String email;
+    private double prix;
+    private int quantite;
 }
